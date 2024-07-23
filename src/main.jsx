@@ -16,7 +16,9 @@ export function uvc(component) {
       }
     }
     render() {
-      return(<div ref={(dom) => { this.dom = dom }}></div>)
+      return React.createElement('div', {
+        ref: (dom) => { this.dom = dom },
+      })
     }
     componentWillUnmount() {
       if (this.app) {
