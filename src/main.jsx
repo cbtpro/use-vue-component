@@ -25,7 +25,6 @@ export function uvc(component) {
         this.app.unmount();
       }
     }
-    componentm
   };
 }
 export function uvi(component) {
